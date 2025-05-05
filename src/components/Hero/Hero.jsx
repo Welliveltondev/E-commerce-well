@@ -2,13 +2,14 @@ import './Hero.css'
 import hand_icon from  '../Assets/hand_icon.png'
 import arrow from '../Assets/arrow.png'
 import hero from '../Assets/hero_image.png'
+
 export const Hero = () => {
   return (
     <div className='hero'>
       <div className="hero-left">
         <h2>NEEW ARRIVALS ONLY</h2>
         <div>
-          <div className='hand-hand-icon'>
+          <div className='hero-hand-icon'>
             <p>new</p>
             <img src={hand_icon} alt="" />
           </div>

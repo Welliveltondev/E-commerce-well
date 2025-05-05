@@ -10,9 +10,7 @@
   align-items: center;
   gap: 10px;
 }
-Link {
-  text-decoration: none;
-}
+
 .nav-logo p {
   color: #171717;
   font-size: 38px;
@@ -36,7 +34,7 @@ Link {
   justify-content: center;
   gap: 3px;
   cursor: pointer;
-  
+  border-bottom: 1px solid transparent;
 }
 
 .nav-menu hr {

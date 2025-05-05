@@ -5,11 +5,14 @@ import ShopCategory from './pages/ShopCategory';
 import Product from './pages/Product';
 import Cart from './pages/Cart';
 import LoginSignUp from './pages/LoginSignUp';
+import Hero from './components/Hero/Hero';
+
 function App() {
   return (
     <div className="App">
       <BrowserRouter> 
       <Navbar />
+      <Hero />
       <Routes>
         <Route path='/' element={<Shop/>} />
         <Route path='/mens' element={<ShopCategory category="men"/>}/>
