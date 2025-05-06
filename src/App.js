@@ -6,13 +6,17 @@ import Product from './pages/Product';
 import Cart from './pages/Cart';
 import LoginSignUp from './pages/LoginSignUp';
 import Hero from './components/Hero/Hero';
+import Popular from './components/Popular/Popular';
+import Offers from './components/Offers/Offers';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter> 
-      <Navbar />
-      <Hero />
+      <Navbar /> 
+      <Hero /> 
+      <Popular /> 
+      <Offers /> 
       <Routes>
         <Route path='/' element={<Shop/>} />
         <Route path='/mens' element={<ShopCategory category="men"/>}/>
@@ -30,3 +34,6 @@ function App() {
 }
 
 export default App;
+
+
+/* os components navbar, hero, popular, offers... e pra serem rend erizados no componente Shop*/
