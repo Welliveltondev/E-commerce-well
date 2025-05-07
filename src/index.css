@@ -15,3 +15,23 @@ code {
   padding: 0;
   box-sizing: border-box;
 }
+
+:root {
+  --red: red;
+  --cor-primary: ##ff4141;
+  --offers-light: #f86060;
+  --cor-vermelho-hover: #f30707;
+  --price-new:#374151;
+  --price-old: #8c8c8c;
+  --nav-paragrafo: #171717;
+  --nav-menu: #626262;
+  --white: white;
+  --black: black;
+  --hr-color: #252525;
+  --border-cart: #7a7a7a;
+  --news-input: #616161;
+  --border-input: #e3e3e3;
+  --title-news: #454545;
+  --pink-light: #fde1ff ;
+  --green-light: #e1ffea22;
+}

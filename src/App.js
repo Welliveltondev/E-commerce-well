@@ -8,6 +8,8 @@ import LoginSignUp from './pages/LoginSignUp';
 import Hero from './components/Hero/Hero';
 import Popular from './components/Popular/Popular';
 import Offers from './components/Offers/Offers';
+import NewCollections from './components/NewCollections/NewCollections';
+import NewsLetter from './components/NewsLetter/NewsLetter';
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
       <Hero /> 
       <Popular /> 
       <Offers /> 
+      <NewCollections />
+      <NewsLetter /> {/* tirar*/}
       <Routes>
         <Route path='/' element={<Shop/>} />
         <Route path='/mens' element={<ShopCategory category="men"/>}/>
