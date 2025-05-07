@@ -10,18 +10,20 @@ import Popular from './components/Popular/Popular';
 import Offers from './components/Offers/Offers';
 import NewCollections from './components/NewCollections/NewCollections';
 import NewsLetter from './components/NewsLetter/NewsLetter';
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter> 
-      <Navbar /> 
-      <Hero /> 
-      <Popular /> 
-      <Offers /> 
-      <NewCollections />
+      <Navbar /> {/* tirar*/}
+      <Hero /> {/* tirar*/}
+      <Popular /> {/* tirar*/}
+      <Offers /> {/* tirar*/}
+      <NewCollections /> {/* tirar*/}
       <NewsLetter /> {/* tirar*/}
-      <Routes>
+      <Footer />{/* tirar*/}
+      <Routes>  {/* tirar*/}
         <Route path='/' element={<Shop/>} />
         <Route path='/mens' element={<ShopCategory category="men"/>}/>
         <Route path='/womens' element={<ShopCategory category="women"/>}/>
