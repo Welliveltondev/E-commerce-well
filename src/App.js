@@ -11,31 +11,34 @@ import Offers from './components/Offers/Offers';
 import NewCollections from './components/NewCollections/NewCollections';
 import NewsLetter from './components/NewsLetter/NewsLetter';
 import Footer from './components/Footer/Footer';
+import mens_banner from '../src/components/Assets/banner_mens.png'
+import womens_banner from '../src/components/Assets/banner_women.png'
+import kids_banner from '../src/components/Assets/banner_kids.png'
+import ShopContextProvider from './context/ShopContext';
 
 function App() {
   return (
-    <div className="App">
-      <BrowserRouter> 
-      <Navbar /> {/* tirar*/}
-      <Hero /> {/* tirar*/}
-      <Popular /> {/* tirar*/}
-      <Offers /> {/* tirar*/}
-      <NewCollections /> {/* tirar*/}
-      <NewsLetter /> {/* tirar*/}
-      <Footer />{/* tirar*/}
-      <Routes>  {/* tirar*/}
+    <ShopContextProvider  className="App">
+      <Navbar /> 
+      <Hero /> 
+      <Popular /> 
+      <Offers />
+      <NewCollections /> 
+      <NewsLetter /> 
+      
+      <Routes>  
         <Route path='/' element={<Shop/>} />
-        <Route path='/mens' element={<ShopCategory category="men"/>}/>
-        <Route path='/womens' element={<ShopCategory category="women"/>}/>
-        <Route path='/kids' element={<ShopCategory category="kids"/>}/>
+        <Route path='/mens' element={<ShopCategory banner={mens_banner} category="mens"/>}/>
+        <Route path='/womens' element={<ShopCategory banner={womens_banner} category="womens"/>}/>
+        <Route path='/kids' element={<ShopCategory banner={kids_banner} category="kids"/>}/>
         <Route path='/produc' element={<Product/>}>
           <Route path=':productId' element={<Product/>} />
         </Route>
         <Route path='/cart' element={<Cart/>} />
         <Route path='/login' element={<LoginSignUp/>} />
       </Routes>
-      </BrowserRouter>
-    </div>
+      <Footer />
+    </ShopContextProvider>
   );
 }
 

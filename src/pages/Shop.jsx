@@ -1,3 +1,4 @@
+import { BrowserRouter } from "react-router-dom"
 import Footer from "../components/Footer/Footer"
 import Hero from "../components/Hero/Hero"
 import NewCollections from "../components/NewCollections/NewCollections"
